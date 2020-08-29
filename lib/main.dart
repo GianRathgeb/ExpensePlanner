@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.amber,
         fontFamily: 'Quicksand',
         textTheme: ThemeData.light().textTheme.copyWith(
-          headline6: TextStyle(
+              headline6: TextStyle(
                 fontFamily: 'OpenSans',
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
             ),
         appBarTheme: AppBarTheme(
           textTheme: ThemeData.light().textTheme.copyWith(
-            headline6: TextStyle(
+                headline6: TextStyle(
                   fontFamily: 'OpenSans',
                   fontSize: 20,
                 ),
@@ -42,18 +42,18 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final List<Transaction> _userTransactions = [
-    Transaction(
-      id: 't1',
-      title: 'Neue Schuhe',
-      amount: 69.99,
-      date: DateTime.now(),
-    ),
-    Transaction(
-      id: 't2',
-      title: 'Grand Latte',
-      amount: 4.99,
-      date: DateTime.now(),
-    ),
+//    Transaction(
+//      id: 't1',
+//      title: 'Neue Schuhe',
+//      amount: 69.99,
+//      date: DateTime.now(),
+//    ),
+//    Transaction(
+//      id: 't2',
+//      title: 'Grand Latte',
+//      amount: 4.99,
+//      date: DateTime.now(),
+//    ),
   ];
 
   void _addNewTransaction(String txTitle, double txAmount) {

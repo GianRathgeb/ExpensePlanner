@@ -1,3 +1,3 @@
 # ExpensePlanner
 
-This is an Expense planner app
+This is my Expense planner app

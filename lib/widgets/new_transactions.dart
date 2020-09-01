@@ -17,7 +17,7 @@ class _NewTransactionState extends State<NewTransaction> {
   void submitData() {
     final enteredTitle = titelController.text;
     final enteredAMount = double.parse(amountController.text);
-    if (enteredTitle.isEmpty || enteredAMount <= 0){
+    if (enteredTitle.isEmpty || enteredAMount <= 0) {
       return;
     }
     widget.addTx(
@@ -50,9 +50,26 @@ class _NewTransactionState extends State<NewTransaction> {
               // Keyboard for IOs: TextInputType.numberWithOptions(decimal:true)
               //onChanged: (val) => amountInput = val,
             ),
-            FlatButton(
+            Container(
+              height: 70,
+              child: Row(
+                children: [
+                  Text('No date selected'),
+                  FlatButton(
+                    textColor: Theme.of(context).primaryColor,
+                    child: Text(
+                      'Select date',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+            ),
+            RaisedButton(
               child: Text('Add Transaction'),
-              textColor: Colors.purple,
+              color: Theme.of(context).primaryColor,
+              textColor: Theme.of(context).textTheme.button.color,
               onPressed: submitData,
             )
           ],

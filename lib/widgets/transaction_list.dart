@@ -14,7 +14,7 @@ class TransactionList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300,
+      height: 500,
       child: transactions.isEmpty
           ? Column(
               children: [
@@ -37,8 +37,8 @@ class TransactionList extends StatelessWidget {
                 return Card(
                   elevation: 5,
                   margin: EdgeInsets.symmetric(
-                    vertical: 8,
-                    horizontal: 5,
+                    vertical: 5,
+                    horizontal: 15,
                   ),
                   child: ListTile(
                     leading: CircleAvatar(
@@ -59,7 +59,7 @@ class TransactionList extends StatelessWidget {
                     ),
                     trailing: IconButton(
                       icon: Icon(Icons.delete),
-                      color: Theme.of(context).errorColor,
+                      color: Colors.redAccent,
                       onPressed: () => deleteTx(transactions[index].id),
                     ),
                   ),

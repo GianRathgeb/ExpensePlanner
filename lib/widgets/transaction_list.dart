@@ -18,7 +18,7 @@ class TransactionList extends StatelessWidget {
             builder: (ctx, constraints) {
               return Column(
                 children: [
-                  Text('You don\'t have any transactions',
+                  Text('No transaction found',
                       style: Theme.of(context).textTheme.headline6),
                   SizedBox(
                     height: 10,

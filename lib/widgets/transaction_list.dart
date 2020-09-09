@@ -35,6 +35,7 @@ class TransactionList extends StatelessWidget {
             },
           )
         : ListView.builder(
+            itemCount: transactions.length,
             itemBuilder: (ctx, index) {
               return Card(
                 elevation: 5,
@@ -74,7 +75,6 @@ class TransactionList extends StatelessWidget {
                 ),
               );
             },
-            itemCount: transactions.length,
           );
   }
 }
